@@ -1,4 +1,4 @@
-export function say(something) {
+window.say = something => {
   const utterance = new SpeechSynthesisUtterance(something);
 
   speechSynthesis.speak(utterance);
